@@ -25,14 +25,9 @@ sigma = zeros(1, size(X, 2));
 %
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
-
-
-
-
-
-
-
-
+mu = ones(size(X, 1), 1) * mean(X);
+sigma = diag(std(X));
+X_norm = (X - mu) / sigma;
 
 % ============================================================
 
